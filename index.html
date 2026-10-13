@@ -10,8 +10,6 @@
     <h1 class="circle">The Boo Crew</h1>
    <img src="https://github.com/EmiMacrae/website/blob/main/The%20Boo%20Crew%20Logo.png?raw=true" alt="BOOOO" id= "Boo" class="Logo">
     <ul>
-	<p> "Gettin' your Vancouver ghosts since 2006!"
-	</p>
   <li><a href="LocalExorcists.html">Local Exorcists </a></li>
   <li><a href="ReportGhost.html">Report A Ghost</a></li>
   <li><a href="https://en.wikipedia.org/wiki/List_of_ghosts">Ghost Types</a></li>
@@ -61,29 +59,23 @@ margin-top: 200;
 
     display: inline-block
   }
-p {
-      align-items: center;       
-      justify-content: center;
-line-height: 400px;
- font-style: italic;
-}
 a {
   text-decoration: none;
  color: #eb4034;
  transition: font-size 2s ease;
 }
  ul {
-  margin-right: 10px
+  margin-right: 10px /* Adjust value as needed */
 }
 a:hover {
 font-size: 30px;  
 }
 </style>
-<audio id="Sound">
-	<source src="325462__insanity54__laugh001.ogg"></source>
+<audio>
+	<source src="325462__insanity54__laugh001.ogg" id="Sound"></source>
 </audio>
  <script>
- var mouseTarget = document.getElementById("Boo");
+ const mouseTarget = document.getElementById("Boo");
   var audio = document.getElementById("Sound");
   mouseTarget.addEventListener("mouseenter", (e) => {
 audio.play();

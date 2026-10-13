@@ -8,7 +8,7 @@
 </head>
   <body>
     <h1 class="circle">The Boo Crew</h1>
-   <img src="https://github.com/EmiMacrae/website/blob/main/The%20Boo%20Crew%20Logo.png?raw=true" alt="BOOOO" class="Logo">
+   <img src="https://github.com/EmiMacrae/website/blob/main/The%20Boo%20Crew%20Logo.png?raw=true" alt="BOOOO" id= "Boo" class="Logo">
     <ul>
   <li><a href="LocalExorcists.html">Local Exorcists </a></li>
   <li><a href="ReportGhost.html">Report A Ghost</a></li>
@@ -71,11 +71,16 @@ a:hover {
 font-size: 30px;  
 }
 </style>
-
+<audio>
+	<source src="325462__insanity54__laugh001.ogg" id="Sound"></source>
+</audio>
  <script>
-  function AudioEvent() {
-var AudioPlay
-  }
+ const mouseTarget = document.getElementById("Boo");
+  var audio = document.getElementById("Sound");
+  mouseTarget.addEventListener("mousehover", (e) => {
+audio.play();
+});
+
  </script>
   </body>
 </html>

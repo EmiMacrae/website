@@ -12,11 +12,22 @@
     <ul>
 	<p> "Gettin' your Vancouver ghosts since 2006!"
 	</p>
-  <li><a href="LocalExorcists.html">Local Exorcists </a></li>
-  <li><a href="ReportGhost.html">Report A Ghost</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/List_of_ghosts">Ghost Types</a></li>
+<div class="Containerlist">
+  <li class="Boxlist"><a href="LocalExorcists.html">Local Exorcists </a></li>
+  <li class="Boxlist"><a href="ReportGhost.html">Report A Ghost</a></li>
+  <li class="Boxlist"><a href="https://en.wikipedia.org/wiki/List_of_ghosts">Ghost Types</a></li>
+</div>
 </ul>    
 <style>
+.ContainerList {
+	display: flex;
+}
+
+.Boxlist {
+width: 120px;
+height: 120px;
+text-align: center;
+}
  .circle {
    background: black;
   width: 400px;
@@ -26,9 +37,9 @@
   font-size: 40px;
   color: white;
 
-    display: flex;           
-      align-items: center;      
-      justify-content: center;
+display: flex;           
+align-items: center;      
+justify-content: center;
 }
 .Logo {
   display: grid;
